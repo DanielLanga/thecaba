@@ -1,0 +1,271 @@
+
+@font-face {
+    font-family: 'Fonte';
+    src: url('./fonts/AMORIA.otf') format('.otf'); /* ou .woff, .woff2, .otf */
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    padding: 0px;
+    margin: 0px;
+    display: flex; /* Isso é essencial para flexbox funcionar */
+    justify-content: center; /* Alinha horizontalmente */
+    align-items: center;
+    flex-direction: column;
+    color: rgb(0, 0, 0);
+    font-family: 'Fonte', sans-serif;
+    background-color: #F4DDB8;
+}
+button{
+    color: #8F9562;
+    font-family: 'Fonte', sans-serif;
+}
+button:hover{
+    color: #CA7D6D;
+}
+h1{
+    color: #212F15;
+}
+i{
+    color: #8F9562;
+}
+i:hover{
+    color: #CA7D6D;
+}
+
+
+.divHeader {
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    top: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex; /* Isso é essencial para flexbox funcionar */
+    justify-content: center; /* Alinha horizontalmente */
+    align-items: center;     /* Alinha verticalmente */
+}
+
+.div0, .div1, .div2 {
+    height: 100%; /* ou 200px, como você preferir */
+    display: flex; /* Isso é essencial para flexbox funcionar */
+    justify-content: center; /* Alinha horizontalmente */
+    align-items: center;     /* Alinha verticalmente */
+    margin: 10px;
+}
+
+.div0 {
+    width: 25%;
+    display: flex; /* Isso é essencial para flexbox funcionar */
+    justify-content: center; /* Alinha horizontalmente */
+    align-items: center;     /* Alinha verticalmente */
+}
+
+.div1 {
+    width: 50%;
+}
+
+.div2 {
+    width: 25%;
+}
+
+.logo {
+    z-index: 100;
+    width: 50%;
+    height: 100%;
+    border-radius: 35px;
+}
+
+.btnH {
+    z-index: 100;
+    margin: 50px;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: #00000000;
+    border-color: #00000000;
+    position: relative;
+}
+
+.btnH:hover {
+    transform: scale(1.1);
+}
+
+.aH2{
+    margin-top: 30px;
+}
+
+.btnH2 {
+    z-index: 100;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: #00000000;
+    border-color: #00000000;
+    position: relative;
+}
+
+
+
+.divHR {
+    background-color: #212F15;
+    flex-direction: column;
+    width: 200px;
+    height: 250px;
+    position: absolute;
+    display: flex; /* Isso é essencial para flexbox funcionar */
+    justify-content: end; /* Alinha horizontalmente */
+    align-items: center; 
+    top: 100%;
+    left: calc(50% + 95px);
+    transform: translate(-50%, -50%);
+    z-index: 99;
+    border-radius: 15px;
+    padding-bottom: 25px;
+}
+
+.userIcon{
+    scale: 2;
+    z-index: 100;
+}
+
+
+.aH0{
+    z-index: 100;
+    width: 75%;
+    height: 75%;
+    border-radius: 35px;
+}
+
+.divbanner{
+    width: 100%;
+    height: 90vh;
+    position: relative;
+}
+.divimg0{
+    width: 100%;
+    height: 90vh;
+    background-image: url('img/banner.jpg');
+    background-size: cover;       /* cobre toda a área */
+    background-position: center;  /* centraliza */
+    background-repeat: no-repeat; /* evita repetição */
+    z-index: 1;
+    object-fit: cover;
+}
+
+.divimg0::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 90vh;
+    background-color: #CA7D6D35; /* verde escuro com transparência */
+    z-index: 1;
+}
+
+.h1{
+    font-size: 90px;
+    text-align: start;
+    padding-left: 150px;
+    padding-top: 25vh;
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 20px;
+}
+.divcontainer{
+    width: 100%;
+    height: 80vh;
+    position: absolute;
+    top: 0; left: 0;
+    z-index: 30;
+}
+
+.divcontainerRecipes {
+    width: 91%;
+    height: 650px;
+    margin: 1%;
+    z-index: 30;
+    border-radius: 20px;
+    box-shadow: 0px 0px 9px 6px rgba(0, 0, 0, 0.329); /* Sombra ao redor */
+    overflow: hidden; /* Garante que nada vaze da div */
+    transition: box-shadow 0.3s ease;
+}
+.divcontainerRecipes:hover{
+    box-shadow: 0px 0px 9px 6px rgba(0, 0, 0, 0.404);
+}
+.divcontainerAll{
+    width: 100%;
+    margin-top: 250px;
+    margin-bottom: 250px;
+    display: flex;
+    justify-content: center; /* Alinha horizontalmente */
+    align-items: center;
+    z-index: 30;
+    flex-direction: column;
+}
+
+.divsubcontainer1Recipes{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* Alinha horizontalmente */
+    align-items: center;
+}
+.divsubcontainer2Recipes{
+    width: 100%;
+    height: 30%;
+}
+.divsubsubcontainer1Recipes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Alinha horizontalmente */
+    align-items: center;
+    width: 50%;
+    height: 100%;
+}
+
+.recipesimg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.recipesp{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 90px;
+    padding-right: 90px;
+    text-align: justify;
+    font-size: 19px;
+}
+
+.btnRecipes {
+    font-size: 20px;
+    font-family: 'Fonte', sans-serif;
+    padding: 12px;
+    font-weight: bold;
+    color:white;
+    background-color: #CA7D6D;
+    border-radius: 25px;
+    border: 0px solid #00000000;
+    transition: background-color 0.3s ease; /* Transição suave */
+}
+
+.btnRecipes:hover {
+    background-color: #212F15; /* Verde escuro */
+    color: white; /* Opcional: para melhor contraste */
+}
+
+
+.divcontainer2{
+    width: 100%;
+    height: 800px;
+    background-color: #F4DDB8;
+}
+
+
+
+
+.recipesh2{
+    text-transform: capitalize;
+    font-size: 30px;
+}
