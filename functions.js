@@ -25,7 +25,7 @@ function Header(){
     a1.className = "aH0";
     d1.appendChild(a1)
     let img = document.createElement("img")
-    img.src = "/img/logo.png"
+    img.src = "img/logo.png"
     img.className = "logo"
     a1.appendChild(img)
 
